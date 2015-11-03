@@ -1,0 +1,365 @@
+<!-- Editor&Author: ZhongZhang -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>ZhongZhangPersonalWebsite</title>
+		<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="./js/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="./css/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+   		 <!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="./js/move-top.js"></script>
+		<script type="text/javascript" src="./js/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<!---		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>--->
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+	</head>
+	<body>
+		<!----- start-header---->
+			<div id="home" class="header">
+					<div class="top-header">
+						<div class="container">
+						<div class="logo">
+							<a href="#"><img src="./images/logo.png" title="Jonas" /></a>
+						</div>
+						<!----start-top-nav---->
+						 <nav class="top-nav">
+							<ul class="top-nav">
+								<li class="active"><a href="#home" class="scroll">ABOUT ME</a><span> </span></li>
+								<li><a href="#work" class="scroll">PROJECTS</a></li>
+								<li><a href="#contact" class="scroll">CONTACT</a></li>
+							</ul>
+							<a href="#" id="pull"><img src="./images/nav-icon.png" title="menu" /></a>
+						</nav>
+						<div class="clearfix"> </div>
+						<!----top-header-info--->
+						<div class="top-header-info">
+							<p>
+								Welcome!<br/>
+								I'm Zhong Zhang. <br/>
+								Software Developer.<br/>
+							</p>
+							<a class="contactme" href="#contact">CONTACT ME</a>
+						</div>
+						<!----//End-header-info--->
+					</div>
+				</div>
+			</div>
+			<!----- //End-header---->
+			<!---- about us ---->
+			<div class="aboutus">
+				<div class="container">
+					<h2>ABOUT<br/>ZHONG ZHANG</h2>
+					<span> </span>
+					<div class="col-md-6 aboutus-left">
+						<p>Hi, my name is Zhong Zhang, and you can call me Jonas. I recently graduated from University of Western Ontario. During my master degree, I attended many course related to web development like Human-Computer interface design, and web development. Meanwhile, I finished several team or individual projects and assignments about HTML&CSS, and javascript design. During these courses, I acquired fundamental knowledge of MEAN (MangoDB, ExpressJS, AngularJS, and Node.js) model, and some popular javascript frameworks such as jQuery.js, Vue.js etc. </p>
+						<p>As the diploma project, the "Random Student" mobile application based on android development taken me around 4 months to develop. For developing this project, I begin to learn this "new" programming language and try to develop this application by myself. After this project, I acquired the basic knowledge of the android development like invoking APIS and design layout etc. More details for the project, this mobile application aims to select student randomly to answering question or other actions for teacher to value the participation of students. 
+						In the user interface, the functions such as sorting, searching, manual editing, and listing information are applied. If you are interesting about it, please the details in the <a href="#work" class="scroll">"My project."</a></p>
+					</div>
+					<div class="col-md-6 aboutus-right">
+						<p>I always be passionate to learn the new programming skills because I recognized that the techniques are continually updating. The only way for software developer to stand out the front line of the age is not practicing the same codes, but learning the up-to-date techniques.</p>
+						<p>In the daily life, I am a kind of outgoing person! I like singing, dancing, and BBQ. Moreover, some sports are my favor like climbing and basketball. I claim that they are the suitable way to increasing the efficiency of work or study. </p>
+						<br/>
+						<h3>Please Click the Button to View My Resume</h3>
+						<a class="aboutus-right-btn" href="Resume_Zhong Zhang.pdf">MY RESUME</a>
+					</div>				
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			<!---- EDUCATION BACKGROUND---->
+			<!---- QUOTE PARTY---->
+			<div class="quote text-left"> 
+				<div class="container">
+					<div class="testmonials">
+						<h2 style="text-align:left">EDUCATION</h2>
+						<span> </span>
+					</div>	
+					<p>Bachelor of Engineering in Electronic Information Engineering<br/>
+					Guilin University of Electronic Technology<br/>Guilin, Guangxi, China(Sep,2009 - Jul,2013)<br/>
+					<br/>
+					<p>Master of Engineering in Software Engineering<br/>
+					University of Western Ontario<br/>London, Ontario, Canada(May,2014 - April,2015)<br/>
+				</div>
+			</div>
+			<!---- //QUOTE ---->
+			<!---- PROJECTS ---->
+			<div id="work" class="works">
+				<div class="container">
+					<h2>MY<br/>PROJECTS</h2>
+					<span> </span>
+				</div>
+				<!---- partners ---->
+				<div class="partners">
+					<!----sreen-gallery-cursual---->
+						<div class="sreen-gallery-cursual">
+							 <!-- requried-jsfiles-for owl -->
+							<link href="./css/owl.carousel.css" rel="stylesheet">
+							    <script src="./js/owl.carousel.js"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items : 2,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : true,
+							        navigationText :  false,
+							        pagination : false,
+							      });
+							    });
+							    </script>
+							 <!-- //requried-jsfiles-for owl -->
+							 <!-- start content_slider -->
+							 <div class="container">
+						       <div id="owl-demo" class="owl-carousel">
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/Drawing Box Java.jpg" alt="screen-name">
+					                	<label>Drawing Box Design Based on Java Programming.</label>
+									</div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/Data Mining.jpg" alt="screen-name">
+					                	<label>Data Mining via PHStat</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/Cyber Security (Linux).jpg" alt="screen-name">
+					                	<label>Social Network Cyber Exploits</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/EDA  Keyboard.jpg" alt="screen-name">
+					                	<label>Keyboard Software & Hardware Design (EDA)</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/MModeling.jpg" alt="screen-name">
+					                	<label>Dealing With Financial Issues with Mathmatical Modeling</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/Android Sample.jpg" alt="screen-name">
+					                	<label>Random Student Mobile Application</label>
+					                </div>
+					                <div class="item">
+					                	<img class="lazyOwl" data-src="./images/images.jpg" alt="screen-name">
+					                	<label>More Projects Are Coming Soon!</label>
+					                </div>					                
+				              </div>
+							</div>
+						<!--//sreen-gallery-cursual---->
+				</div>
+				<!---- //partners ---->
+				<!----project-grid---->
+				<div class="project-grid">
+					<div class="container">
+					<img class="project-screen" src="./images/Android project1.jpg" title="Random Student" />
+					<img class="project-screen" src="./images/Android project2.jpg" title="Random Student" />
+					<img class="project-screen" src="./images/Android project3.jpg" title="Random Student" />
+					<div class="project-grid-info">
+						<div class="col-md-3 project-grid-info-left">
+							<h3>Project Name:</h3>
+							<label>"Random Student" </label>
+							<h3>Codes Link(GitHub):</h3>
+							<label><a href="https://gitlab.eng.uwo.ca/zzhan427/rrandomstudent/blob/master/Project_RandomStudent_ZhongZhang%20250764829.zip">https://gitlab.eng.uwo.ca/zzhan427/rrandomstudent/tree/master</a></label>
+							<a class="sitedemo" href="./RandomStudent.zip">DOWNLOAD CODES ZIP</a>
+						</div>
+						<div class="col-md-9 project-grid-info-left">
+							<h3>ABOUT PROJECT</h3>
+							<p>In user interface (UI), it displays the name and head portrait of each student followed by the numbers of correct times, incorrect times, and attendances. 
+							Moreover, there are several buttons to realize different functions: <br/>1. Randomly select student: this button aims to select student randomly, and the UI for 
+							the function will be individually designed. More exactly, there are three options for the selected student, the "Correct", "Incorrect", and "Dismiss". <br/>2.Add 
+							student: sometimes, the professors may add new student into the list of class. In this case, the app sets this button for adding student. The new student will
+							contain the data about first name, second name, and the gender. <br/>3. Save files: After changing the original data, this function will be operated if the users 
+							intend to update the data. Meanwhile, all data will be saving into the CSV files. <br/>4. Sorting options: there are five options for sorting the list, "first name",
+							"second name", "absences", "percent correct", and "call frequency". <br/>The whole data should be imported as CSV files, and the exported file type should be CSV as well.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					</div>
+				</div>
+				<!----project-grid---->
+			</div>
+			</div>
+			<!---- PROFESSIONAL EXPERIENCES ---->
+			<div class="testmonials">
+				<div class="container">
+					<h2>TECHNICAL SKILLS & PROFESSIONAL EXPERIENCES</h2>
+					<span> </span>
+				<div class="people-testmonials">
+					 <script>
+							    $(document).ready(function() {
+							      $("#owl-demo1").owlCarousel({
+							        items : 1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation : false,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+						</script>
+					<div id="owl-demo1" class="owl-carousel">
+					                <div class="item ">
+					                	<p>PROGRAMING LANGUAGES</p>
+										<br/>
+										<p>HTML + CSS, JavaScript, Ajax, jQuery, Php, Java, C++, Android, Matlab, XML.</p>
+									</div>
+									<div class="item ">
+					                	<p>Software and OS</p>
+										<br/>
+										<p>Eclipse, Dreamweaver, Git, Android Studio, Matlab; Linux, Window.</p>
+									</div>
+									<div class="item ">
+					                	<p>China United Network Communications Co, Ltd.</p>
+										<br/>
+										<p>Assited network maintenance engineer to formulate and test network of customers. 
+										During the intership, I communicated with customer and excavate the demands of customers.</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<img src="./images/test-people-pic.png" title="name" />
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a>Network maintenance engineer assistant</a>
+					               				<small>June,2011 - Sep,2011</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>Mobjoy Internet Technology Co.,Ltd.</p>
+										</br>
+										<p>Woking with a dynamic team to develop and maintain mobile applications. </p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               				<img src="./images/test-people-pic.png" title="name" />
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a>Software developer assistant</a>
+					               				<small>Jun,2012 - Sep,2012</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+									<div class="item ">
+					                	<p>CeeTech Inc.</p>
+										<br/>
+										<p>Assisted circuit maintenance engineer to test circuits of transformer substations.</p>
+					               		<div class="test-people">
+					               			<div class="test-people-pic">
+					               					<img src="./images/test-people-pic.png" title="name" />
+					               			</div>
+					               			<div class="test-people-info">
+					               				<a>Circuit maintenance engineer assistant</a>
+					               				<small>May,2015 - Jun,2015</small>
+					               			</div>
+					               			<div class="clearfix"> </div>
+					               		</div>
+									</div>
+				    </div>
+				</div>
+			</div>
+			</div>
+			<!---- //TESTIMONIAL ---->
+			<!---- CONTACT ----->
+			<div id="contact" class="contact"> 
+				<div class="container">
+					<h2>WAYS TO<br/>CONTACT ME</h2>
+					<span> </span>
+				<!----contact-grids---->
+				<div class="contact-grids">
+					<div class="col-md-6 contact-left">
+						<p>Contact me!</p>
+						<div class="address">
+							<label>zhongzhangcan@gmail.com</label>
+							<label>+1(226)977-1068</label>
+						</div>
+						<div class="clearfix"> </div>
+						<div class="address">
+							<label>1 Canyon Ave</label>
+							<label>Toronto, Ontario</label>
+							<label>M3H 4X8</label>
+						</div>
+						<div class="clearfix"> </div>
+							<div class="clearfix"> </div>
+						</form>
+					</div>
+					<div class="col-md-6 contact-center">
+						<p>Socal Links:</p>
+						<div class="social-share">
+							<h4>Click to follow</h4>
+							<a href="https://www.facebook.com/jonas.zhang.58">
+								<img src="./images/facebook.png" title="Facebook" alt="facebook" style="width:3em;height:3em;"/>
+							</a>
+							
+							<a href="https://ca.linkedin.com/pub/zhang-zhong/b2/9a8/109">
+								<img src="./images/linkedin.jpg" title="Linkedin" alt="linkedin" style="width:3em;height:3em;"/>
+							</a>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+			</div>
+			<!---- CONTACT ----->
+			<!----contact-map
+			<div class="contact-map">
+				<iframe src=""></iframe>
+				<label>I'M HERE</label>
+			</div>
+---->
+			<div class="copy-right text-center">
+				<div class="container">
+					<label>ZHONG(JONAS) ZHANG</label>  
+					<br/>
+					<label>Email:<a href="mailto:zhongzhangcan@gmail.com"?Subject=Hello%20again" target="_top" style="text-decoration:none;color:#FFF5EE">zhongzhangcan@gmail.com</a></label>
+					<br/>
+					<label><a href="https://www.google.ca/maps/place/1+Canyon+Ave,+North+York,+ON+M3H+4X8/@43.7564266,-79.4366704,17z/data=!3m1!4b1!4m2!3m1!1s0x882b32777ecefc45:0xda903737e0d2cf23" target="_blank" style="text-decoration:none;color:#FFF5EE">1 Canyon Ave, Toronto. M3H 4X8.</a></label>
+								<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+				</div>
+			</div>
+	</body>
+</html>
+
